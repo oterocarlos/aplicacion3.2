@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp4.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/descarga.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1>Volcan pópocatepetl </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Ubicacion del volcan</h1>
+   <div>
+   <p>El popocatepetl se encuentra en los limites del estado de mexico morelos y puebla es considerado un estratovolcan con una petrologia hiperstena-andesita con 16 erupciones registradas, es el volcán mas alto de la republica mexicana. </p>
+   
+   <br>
+   </div>
+   <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/descarga.jpg',1)"><img src="imagenes/popo2.jpg" width="445" height="435" id="Image11"></a></div>
+   </div>
+   </div>
+   
+   <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>TAMAÑO </h2>
+   <p>Se muestra informacion del tamaño del popocatepletl</p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>¿QUE TAN VIEJO ES EL VOLCAN?</h2>
+   <p>Se muestra la antiguedad del volcan </p>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>UN POCO DE HISTORIA SOBRE EL POPO </h2>
+   <p>Muestra la historia del popocatepetl</p>
+   </a>
+   </li>
+      <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>ACTIVIDAD VOLCANICA</h2>
+   <p>Muestra la actividad volcanica del popo</p>
+   </a>
+   </li>
+   </ul>
+  </div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow1.html" style="width:500px;height:370px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/fire.png" width="59" height="73">
+   </div>
+    <div>
+    <h4>Aplicacion Uno</h4>
+    <h4>CARLOS ANTONIO OTERO ORIHUELA</h4>
+    </div>
+    </div>
+    </div>
+    
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>TAMAÑO</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p>Cubre una superficie de 283,192.53 hectáreas y tiene una altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 x 600 metros.
+El paisaje en la zona que rodea al Popocatépetl contiene varios tipos de ecosistemas con rica variedad de flora y fauna. Hay bosques mixtos de pino, oyamel y encino, donde coexisten hasta 1,000 especies de plantas. Sobre el cono, principalmente cerca de la boca, se encuentran glaciares que durante los últimos años han disminuido.</p>
+
+<img src="imagenes/po1.jpg" width="371" height="289">
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Uno, CAOO</h4>
+        </div>
+         </div>
+          </div>
+          
+          <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>ANTIGUEDAD</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+            <p> El Popocatépetl es un volcán geológicamente joven. Se cree que tiene unos 730,000 años de antigüedad y que es remanente de volcanes antiguos que colapsaron. Su historia comenzó con la formación del volcán Nexpayantla a través de la expulsión de flujos de lava andesítica y dacítica. Años después, este volcán colapsó y en consecuencia se formó una caldera, es decir, una depresión amplia y profunda debajo de la cual se halla una cámara de magma.</p>
+            <img src="imagenes/popo2.jpg" width="322" height="212">
+            
+            <img src="imagenes/descarga.jpg" width="362" height="288">
+
+            </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Uno, CAOO</h4>
+         </div>
+         </div>
+          </div>
+          
+            <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>HISTORIA</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+            <P>Por su origen náhuatl su nombre significa “montaña que humea”, por su altura es el pico más alto de México después del Pico de Orizaba, y por su cercanía con varias poblaciones humanas se le considera uno de los volcanes más peligrosos del mundo. También se le conoce  como “Don Goyo” o simplemente como “Popo”.
+            El cono de un nuevo volcán, Ventorrillo, emergió entonces, pero este experimentó un colapso hace aproximadamente 23,000 años. Posteriormente empezó a emerger el volcán El Fraile, pero al cabo de un tiempo terminó por colapsar también debido a una fuerte erupción, tras lo cual el lado sur del cono quedó destruido.
+El moderno Popocatépetl tuvo su origen durante el Pleistoceno tardío-Holoceno, después del derrumbe de El Fraile. El cono perteneciente a Don Goyo se formó paulatinamente hasta adquirir un tamaño significativo, pero produjo una fuerte erupción que hizo colapsar un lateral del cono y generar una avalancha de depósitos que cubrió la superficie. Al menos 4 avalanchas subsecuentes contribuyeron a formar el moderno cono.</P>
+
+<img src="imagenes/popo3.jpg" width="342" height="417">
+            </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Uno, CAOO</h4>
+         </div>
+         </div>
+          </div>
+          
+             <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>ACTIVIDAD VOLCANICA</h1>
+           </div>
+            <div data-role="content" align="center">
+            <div>
+            <P>A partir de mediados del Holoceno se han producido 3 grandes erupciones plinianas; la última ocurrió en 800 d. C. Se estima que ha estado activo durante más de medio millón de años, y su historial de erupciones es bastante amplio.
+En total, existen 41 erupciones confirmadas a lo largo de la historia.
+La erupción volcánica más antigua que se ha confirmado del Popocatépetl tuvo lugar en el 7150 a. C. En total, existen 41 erupciones confirmadas a lo largo de la historia, y hay 5 aún inciertas. Por otro lado, se ha registrado más de 15 grandes erupciones a partir de la llegada de los españoles a tierras mexicanas.
+
+<img src="imagenes/popo4.jpg" width="364" height="392">
+<br>
+Muchos eventos fueron documentados por los aztecas en sus códices, como el que sucedió en el año 1509 d. C, el cual fue plasmado en los códices Telleriano-Remensis y Vaticano. En 1519 dio inicio una actividad fumarólica que culminó en 1530. Entre 1539 y 1549 se produjeron erupciones explosivas moderadas que liberaron piedra pómez del interior de la tierra.
+</P>
+
+<img src="imagenes/mujer.jpg" width="473" height="417">
+
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Medidas preventivas en caso de ceniza</h1>
+   <div>
+   <p> 1.-No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado
+   Mantén la calma.<br>
+2.-Utiliza medios electrónicos y de comunicación para obtener información confiable que den    las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus        instrucciones.<br>
+3.-No realices actividades al aire libre y si es posible no salgas.<br>
+4.-Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+    Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua   pura.<br>
+5.-Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.
+   Ten a la mano una linterna y pilas.<br>
+6.- La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las       precauciones necesarias.<br>
+7.-Cubre tinacos, cisternas y depósitos de agua.<br>
+8.-Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no    permitas que se vaya al drenaje. </p><br>
+   <br>
+   </div>
+   <div>
+   <img src="imagenes/medidas.jpg" width="100%" height="50%"></div>
+   </div>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Medidas preventivas en caso de erupcion</h1>
+   <div>
+   <p>En conferencia de prensa, el secretario de Protección Civil, Fausto Lugo, detalló que ante esta situación el gobierno local tiene listas 750 brigadas y se repartirán 500 mil cubrebocas, además de que se vigilarán las delegaciones Milpa Alta, Tláhuac, Xochimilco, Tlalpan, Iztapalapa y Venustiano Carranza.
+
+Asimismo, precisó que se establecerían protocolos de actuación en escuelas y edificios públicos, y dio a conocer algunas recomendaciones a la población en caso de caída abundante de ceniza volcánica, entre ellas: cerrar depósitos de agua, proteger ojos, nariz y boca, ya que ésta puede provocar afectaciones al sistema respiratorio.</p>
+
+   <br>
+   </div>
+   <div>
+   <img src="imagenes/plan.jpg" width="90%" height="80%"></div>
+   </div>
+   </div>
+            </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Uno, CAOO</h4>
+         </div>
+         </div>
+          </div>
+         </div>
+         </div>
+          </div>
+</body>
+</html>
+
